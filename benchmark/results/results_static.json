@@ -1,0 +1,213 @@
+{
+  "generated_at": "2026-10-17T10:39:22+00:00",
+  "model": null,
+  "scenarios": [
+    {
+      "scenario": "01_parameter_change",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "checkout.checkout",
+          "invoice.make_invoice"
+        ],
+        "hits": 1,
+        "flagged_count": 2,
+        "expected_count": 1,
+        "false_positives": [
+          "invoice.make_invoice"
+        ],
+        "precision": 0.5,
+        "recall": 1.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "02_return_value_change",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "cart.add",
+          "log.log_price"
+        ],
+        "hits": 1,
+        "flagged_count": 2,
+        "expected_count": 1,
+        "false_positives": [
+          "log.log_price"
+        ],
+        "precision": 0.5,
+        "recall": 1.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "03_boundary_condition",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "signup.register"
+        ],
+        "hits": 1,
+        "flagged_count": 1,
+        "expected_count": 1,
+        "false_positives": [],
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "04_shared_utility",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "a.receipt",
+          "b.label",
+          "c.email"
+        ],
+        "hits": 3,
+        "flagged_count": 3,
+        "expected_count": 3,
+        "false_positives": [],
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "05_unrelated_change",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [],
+        "hits": 0,
+        "flagged_count": 0,
+        "expected_count": 0,
+        "false_positives": [],
+        "precision": null,
+        "recall": null
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "06_dependency_cycle",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "a.ping",
+          "main.run"
+        ],
+        "hits": 2,
+        "flagged_count": 2,
+        "expected_count": 2,
+        "false_positives": [],
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "07_deleted_function",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "report.build"
+        ],
+        "hits": 1,
+        "flagged_count": 1,
+        "expected_count": 1,
+        "false_positives": [],
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "08_dynamic_call",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [],
+        "hits": 0,
+        "flagged_count": 0,
+        "expected_count": 1,
+        "false_positives": [],
+        "precision": null,
+        "recall": 0.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 2,
+      "tests_recall": null,
+      "unwanted_tests": [],
+      "limitation_reported": true
+    },
+    {
+      "scenario": "09_existing_test_covers_change",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "shop.final_price"
+        ],
+        "hits": 1,
+        "flagged_count": 1,
+        "expected_count": 1,
+        "false_positives": [],
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tests_found": [
+        "tests.test_calc.test_discount"
+      ],
+      "unresolved_notes": 0,
+      "tests_recall": 1.0,
+      "unwanted_tests": []
+    },
+    {
+      "scenario": "10_unsupported_model_claim",
+      "changed_symbols_correct": true,
+      "static": {
+        "flagged": [
+          "billing.bill"
+        ],
+        "hits": 1,
+        "flagged_count": 1,
+        "expected_count": 1,
+        "false_positives": [],
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tests_found": [],
+      "unresolved_notes": 0,
+      "tests_recall": null,
+      "unwanted_tests": [],
+      "fake_claim_status": "unverified_relationship",
+      "fake_claim_check_passed": true
+    }
+  ],
+  "totals": {
+    "static": {
+      "precision": 0.8461538461538461,
+      "recall": 0.9166666666666666,
+      "false_positives": 2
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "description": "A plausible-looking model claim names a symbol with no dependency path; validation must label it unverified.",
+  "changed": [
+    "tax.rate"
+  ],
+  "affected": [
+    "billing.bill"
+  ],
+  "not_affected": [
+    "shipping.fee"
+  ],
+  "tests": [],
+  "fake_model_claim": {
+    "title": "Shipping uses tax",
+    "severity": "high",
+    "changed_symbol": "tax.rate",
+    "affected_symbol": "shipping.fee",
+    "verdict": "likely_affected",
+    "reasoning": "Shipping fees probably include tax.",
+    "impact_path": [
+      "tax.rate",
+      "shipping.fee"
+    ],
+    "evidence": [
+      {
+        "file": "shipping.py",
+        "start_line": 1,
+        "end_line": 2,
+        "description": "fee"
+      }
+    ]
+  },
+  "expected_claim_status": "unverified_relationship"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "An eligibility check changes from >= 18 to > 18.",
+  "changed": [
+    "rules.is_adult"
+  ],
+  "affected": [
+    "signup.register"
+  ],
+  "not_affected": [],
+  "tests": []
+}

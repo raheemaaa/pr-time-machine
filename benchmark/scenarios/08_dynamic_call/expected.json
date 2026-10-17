@@ -1,0 +1,12 @@
+{
+  "description": "A handler is called through getattr(). Static analysis cannot resolve it (known limitation).",
+  "changed": [
+    "handlers.on_save"
+  ],
+  "affected": [
+    "dispatcher.dispatch"
+  ],
+  "not_affected": [],
+  "tests": [],
+  "expect_unresolved_note": true
+}

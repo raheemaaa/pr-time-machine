@@ -1,0 +1,12 @@
+{
+  "description": "Two mutually recursive functions; traversal must terminate.",
+  "changed": [
+    "b.pong"
+  ],
+  "affected": [
+    "a.ping",
+    "main.run"
+  ],
+  "not_affected": [],
+  "tests": []
+}

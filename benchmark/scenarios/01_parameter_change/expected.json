@@ -1,0 +1,13 @@
+{
+  "description": "A shared function renames a keyword parameter. One caller uses the old keyword; one calls without it.",
+  "changed": [
+    "pricing.total"
+  ],
+  "affected": [
+    "checkout.checkout"
+  ],
+  "not_affected": [
+    "invoice.make_invoice"
+  ],
+  "tests": []
+}

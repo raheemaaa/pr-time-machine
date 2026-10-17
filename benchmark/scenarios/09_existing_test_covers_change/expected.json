@@ -1,0 +1,16 @@
+{
+  "description": "A discount function has an existing test; the test must be discovered as relevant.",
+  "changed": [
+    "calc.discount"
+  ],
+  "affected": [
+    "shop.final_price"
+  ],
+  "not_affected": [],
+  "tests": [
+    "tests.test_calc.test_discount"
+  ],
+  "not_tests": [
+    "tests.test_other.test_unrelated"
+  ]
+}

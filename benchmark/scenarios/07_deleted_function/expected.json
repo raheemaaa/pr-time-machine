@@ -1,0 +1,13 @@
+{
+  "description": "A legacy function is deleted but one caller still uses it.",
+  "changed": [
+    "legacy.old_total"
+  ],
+  "affected": [
+    "report.build"
+  ],
+  "not_affected": [
+    "modern.build"
+  ],
+  "tests": []
+}

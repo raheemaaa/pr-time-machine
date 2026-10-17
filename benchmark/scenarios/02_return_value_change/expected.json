@@ -1,0 +1,13 @@
+{
+  "description": "A parser now returns a string instead of a float. Arithmetic callers break; formatting callers do not.",
+  "changed": [
+    "util.parse_price"
+  ],
+  "affected": [
+    "cart.add"
+  ],
+  "not_affected": [
+    "log.log_price"
+  ],
+  "tests": []
+}

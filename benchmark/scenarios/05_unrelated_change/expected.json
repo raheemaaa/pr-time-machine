@@ -1,0 +1,12 @@
+{
+  "description": "A helper nobody calls is edited. Nothing should be flagged.",
+  "changed": [
+    "scratch.experiment"
+  ],
+  "affected": [],
+  "not_affected": [
+    "core.compute",
+    "api.handler"
+  ],
+  "tests": []
+}

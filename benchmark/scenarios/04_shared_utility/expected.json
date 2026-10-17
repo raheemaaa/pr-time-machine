@@ -1,0 +1,13 @@
+{
+  "description": "A money formatter used by three modules changes its output format.",
+  "changed": [
+    "fmt.money"
+  ],
+  "affected": [
+    "a.receipt",
+    "b.label",
+    "c.email"
+  ],
+  "not_affected": [],
+  "tests": []
+}
